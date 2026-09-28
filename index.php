@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Luz | Portfólio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <!--  MENU   -->
+      <header>
+        <div class="logo">
+            <h2>Lucas <span>Luz</span></h2>
+        </div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+      </header>
+      
+      <!-- CONTEÚDO PRINCIPAL -->
+
+      <main>
+        <!-- SEÇÃO DE INÍCIO -->
+        <section id="inicio" class="inicio">
+            <div class="inicio-conteudo">
+                <p class="apresentacao">Olá, eu sou</p>
+                <h1>Lucas Luz</h1>
+                <h2>Desenvolvedor de Software</h2>
+                <p clas="descricao">
+                    Gosto de transformar ideias em projetos utilizando
+                    programação e tecnologia
+                </p>
+                <div class="botoes">
+                    <a href="#projetos" class="botao">Ver projetos</a>
+                    <a href="#contato" class="botao botao-secundario">Entrar em contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+         <section id="sobre" class="sobre">
+            <div class="titulo-secao">
+                <p>Conheça um pouco</p>
+                <h2>Sobre mim</h2>
+            </div>
+            <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <p>
+                        Sou Desenvolvedor de software e apaixonado por
+                        tecnologia. Gosto de aprender novas ferramentas
+                        e criar novos projetos que resolvam problemas reais.
+                    </p>
+                    <p>
+                        Atualmente estudo desenvolvimento de sistemas e trabalho
+                        com diferentes tecnologias para construir aplicações
+                        modernas e funcionais.
+                    </p>
+                </div>
+                <div class="habilidades">
+                    <div class="habilidade">
+                        <h3>HTML</h3>
+                        <p>Estruturação de páginas web.</p>
+                    </div>
+                    <div class="habilidade">
+                        <h3>CSS</h3>
+                        <p>Estilização e criação de interface.</p>
+                    </div>
+                    <!--div class="habilidade">
+                        <h3>PHP</h3>
+                        <p>Desenvolvimento de aplicações web.</p>
+                    </div-->
+                </div>
+            </div>
+         </section>
+         <section id="projetos" class="projetos-secao">
+            <div class="titulo-secao">
+                <p>Alguns trabalhos</p>
+                <h2>Meus projetos</h2>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="numero-projeto">
+                        01
+                    </div>
+                    <h3>Sistema de cadastro</h3>
+                    <p>
+                        Descrição do sistema de cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="cadastro.html">Ver projeto</a>
+                </div>
+                <!-- PROJETO 2 -->
+                                 <div class="card">
+                    <div class="numero-projeto">
+                        01
+                    </div>
+                    <h3>Sistema de cadastro</h3>
+                    <p>
+                        Descrição do sistema de cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="cadastro.html">Ver projeto</a>
+                </div>
+                <!-- PROJETO 3 -->
+                <div class="card">
+                    <div class="numero-projeto">
+                        01
+                    </div>
+                    <h3>Sistema de cadastro</h3>
+                    <p>
+                        Descrição do sistema de cadastro
+                    </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="cadastro.html">Ver projeto</a>
+                </div>
+            </div>
+         </section>
+
+         <!-- SEÇÃO CONTATO -->
+         <section id="contato" class="contato">
+            <div class="titulo-secao">
+                <p>Vamos conversar?</p>
+                <h2>Contato</h2>
+            </div>
+            <div class="contato-links">
+                <a href="https://wa.me/5541997972822">Whatsapp</a>
+                <a href="mailto:lucas.luz@docente.senai.br">Email</a>
+                <a href="https://github.com/lookdev-luz">Github</a>
+                <a href="https://linkedin.com/in/lucasdluz">LinkedIn</a>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <p>
+            Desenvolvido por <a href="https://look.devlook.xyz">Lucas Luz</a>
+        </p>
+        <p>
+            HTML + CSS
+        </p>
+    </footer>
+</body>
+</html>
