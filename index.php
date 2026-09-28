@@ -6,9 +6,9 @@
     $resultado = "";
 
     if ($idade > 18) {
-        $resultado = "É de maior";
+        $resultado = "de maior";
     } else {
-        $resultado = "É de menor";
+        $resultado = "de menor";
     }
 ?>
 <!DOCTYPE html>
