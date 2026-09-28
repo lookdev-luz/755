@@ -23,8 +23,7 @@
     <!--  MENU   -->
       <header>
         <div class="logo">
-            <h2>  <?= $resultado ?> </h2>
-            <!--h2>Lucas <span>Luz</span></h2-->
+            <h2>Lucas <span>Luz</span></h2>
         </div>
         <nav>
             <a href="#inicio">Início</a>
@@ -41,7 +40,7 @@
         <section id="inicio" class="inicio">
             <div class="inicio-conteudo">
                 <p class="apresentacao">Olá, eu sou</p>
-                <h1>Lucas Luz</h1>
+                <h1><?= $resultado ?></h1>
                 <h2>Desenvolvedor de Software</h2>
                 <p clas="descricao">
                     Gosto de transformar ideias em projetos utilizando
