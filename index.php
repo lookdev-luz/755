@@ -1,16 +1,3 @@
-<?php
-    $nome = "Lucas";
-    $idade = 23;
-    $altura = 1.80;
-    $matricula_ativa = true;
-    $resultado = "";
-
-    if ($idade > 18) {
-        $resultado = "de maior";
-    } else {
-        $resultado = "de menor";
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,7 +27,7 @@
         <section id="inicio" class="inicio">
             <div class="inicio-conteudo">
                 <p class="apresentacao">Olá, eu sou</p>
-                <h1><?= $resultado ?></h1>
+                <h1>Lucas Luz</h1>
                 <h2>Desenvolvedor de Software</h2>
                 <p clas="descricao">
                     Gosto de transformar ideias em projetos utilizando
