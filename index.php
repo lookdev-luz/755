@@ -92,14 +92,14 @@
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!--span>PHP</span-->
+                        <span>PHP</span>
                     </div>
-                    <a href="cadastro.html">Ver projeto</a>
+                    <a href="idade-get.php">Ver projeto</a>
                 </div>
                 <!-- PROJETO 2 -->
                                  <div class="card">
                     <div class="numero-projeto">
-                        01
+                        02
                     </div>
                     <h3>Sistema de cadastro</h3>
                     <p>
@@ -108,25 +108,25 @@
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!--span>PHP</span-->
+                        <span>PHP</span>
                     </div>
-                    <a href="cadastro.html">Ver projeto</a>
+                    <a href="idade-post.php">Ver projeto</a>
                 </div>
                 <!-- PROJETO 3 -->
                 <div class="card">
                     <div class="numero-projeto">
-                        01
+                        03
                     </div>
-                    <h3>Sistema de cadastro</h3>
+                    <h3>Persistência de dados</h3>
                     <p>
-                        Descrição do sistema de cadastro
+                        Descrição do sistema de json
                     </p>
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
-                        <!--span>PHP</span-->
+                        <span>PHP</span>
                     </div>
-                    <a href="cadastro.html">Ver projeto</a>
+                    <a href="dados-json.php">Ver projeto</a>
                 </div>
             </div>
          </section>
