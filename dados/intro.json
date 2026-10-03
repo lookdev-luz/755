@@ -1,18 +1,1 @@
-[
-  {
-    "nome": "Lucas",
-    "idade": 23,
-    "altura": 1.83,
-    "notas": {
-        "1Bimestre": {
-            "Prova1": 10
-        },
-        "2Bimestre": {
-            "Prova1": 10
-        },
-        "3Bimestre": {
-            "Prova1": 10
-        }
-    }
-  }
-]
+[]
