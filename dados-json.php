@@ -67,28 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
 
     // SALVAR NO ARQUIVO JSON
-    //file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
-$caminho = __DIR__ . "/dados/intro.json";
-
-echo "<pre>";
-
-echo "CAMINHO DO ARQUIVO:\n";
-var_dump($caminho);
-
-echo "\nARQUIVO EXISTE?\n";
-var_dump(file_exists($caminho));
-
-echo "\nJSON GERADO:\n";
-var_dump($jsonAtualizado);
-
-echo "\nTENTANDO SALVAR...\n";
-
-$resultado = file_put_contents($caminho, $jsonAtualizado);
-
-var_dump($resultado);
-
-echo "</pre>";
-    }
+    file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+}
 
 // LEITURA DOS DADOS PARA EXIBIÇÃO
 
