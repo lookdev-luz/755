@@ -1,0 +1,81 @@
+[
+    {
+        "nome": "Lucas",
+        "idade": 23,
+        "notas": {
+            "portugues": {
+                "prova1": 10,
+                "prova2": 9
+            },
+            "matematica": {
+                "prova1": 10,
+                "prova2": 9
+            }
+        },
+        "status": "Aprovado"
+    },
+        {
+        "nome": "Danilo",
+        "idade": 18,
+        "notas": {
+            "portugues": {
+                "prova1": 10,
+                "prova2": 9
+            },
+            "matematica": {
+                "prova1": 10,
+                "prova2": 9
+            }
+        },
+        "status": "Aprovado"
+    },
+        {
+        "nome": "Michel",
+        "idade": 25,
+        "notas": {
+            "portugues": {
+                "prova1": 10,
+                "prova2": 9
+            },
+            "matematica": {
+                "prova1": 10,
+                "prova2": 9
+            }
+        },
+        "status": "Aprovado"
+    },
+        {
+        "nome": "Kauã",
+        "idade": 18,
+        "notas": {
+            "portugues": {
+                "prova1": 10,
+                "prova2": 9
+            },
+            "matematica": {
+                "prova1": 10,
+                "prova2": 9
+            }
+        },
+        "status": "Aprovado"
+    },
+        {
+        "nome": "Francisco",
+        "idade": 20,
+        "notas": {
+            "portugues": {
+                "prova1": {
+                    "Normal": 10,
+                    "Recuperação": 5
+                },
+
+                "prova2": 9
+            },
+            "matematica": {
+                "prova1": 10,
+                "prova2": 9
+            }
+        },
+        "status": "Aprovado"
+    }
+]

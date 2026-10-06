@@ -31,23 +31,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "portugues" => [
                 "prova1" => $portugues_prova1,
                 "prova2" => $portugues_prova2,
-                "prova3" => $portugues_prova3,
             ],
 
             "matematica" => [
                 "prova1" => $matematica_prova1,
                 "prova2" => $matematica_prova2,
-                "prova3" => $matematica_prova3,
-            ],
-
-            "historia" => [
-                "prova1" => $historia_prova1,
-                "prova2" => $historia_prova2,
-                "prova3" => $historia_prova3,
             ]
-
-        ]
-
+        ],
+        "status" => "Aprovado"
     ];
 
     // SERVE PARA LER/ABRIR ARQUVO JSON
@@ -101,26 +92,12 @@ $alunos = json_decode($conteudoJson, true);
         <label>Prova 2:</label>
         <input type="number" name="portugues_prova2" min="0" max="10" step="0.1" required>
         <br><br>
-        <label>Prova 3:</label>
-        <input type="number" name="portugues_prova3" min="0" max="10" step="0.1" required>
         <h2>Matemática</h2>
         <label>Prova 1:</label>
         <input type="number" name="matematica_prova1" min="0" max="10" step="0.1" required>
         <br><br>
         <label>Prova 2:</label>
         <input type="number" name="matematica_prova2" min="0" max="10" step="0.1" required>
-        <br><br>
-        <label>Prova 3:</label>
-        <input type="number" name="matematica_prova3" min="0" max="10" step="0.1" required>
-        <h2>História</h2>
-        <label>Prova 1:</label>
-        <input type="number" name="historia_prova1" min="0" max="10" step="0.1" required>
-        <br><br>
-        <label>Prova 2:</label>
-        <input type="number" name="historia_prova2" min="0" max="10" step="0.1" required>
-        <br><br>
-        <label>Prova 3:</label>
-        <input type="number" name="historia_prova3" min="0" max="10" step="0.1" required>
         <br><br>
         <button type="submit">Enviar</button>
     </form>
@@ -153,16 +130,6 @@ $alunos = json_decode($conteudoJson, true);
 
 
     <?php } ?>
-    
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
