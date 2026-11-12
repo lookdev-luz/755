@@ -5,9 +5,9 @@
 
 // host = '194.61.238.119'
 $host = 'localhost';
-$db = '';
-$user = '';
-$pass = '';
+$db = 'lucasluz';
+$user = 'lucasluz';
+$pass = '147258369Sofia!@#$%';
 $charset = 'utf8mb4';
 
 try {
