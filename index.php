@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Luz | Portfólio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
     <!--  MENU   -->
@@ -94,7 +94,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="idade-get.php">Ver projeto</a>
+                    <a href="atividades/funcoes2.php">Ver projeto</a>
                 </div>
                 <!-- PROJETO 2 -->
                                  <div class="card">

@@ -1,7 +1,9 @@
 <?php
-
+echo "DEBUG 1";
 // Verifica se o formulário foi enviado usando o método POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+echo "DEBUG 2";
     $nome = $_POST["nome"];
     $idade = $_POST["idade"];
 
@@ -42,11 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     // SERVE PARA LER/ABRIR ARQUVO JSON
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "../dados/intro.json");
+    
 
     // SERVE PARA CONVERTER JSON PARA ARRAY PHP
     // O true SERVE PARA CONVERTER O JSON EM ARRAY ASSOCIATIVO PARA PHP LER
     $alunos = json_decode($conteudoJson, true);
+    
 
     // ADICIONAR O NOVO ALUNO
     $alunos[] = $novoAluno;
@@ -56,9 +60,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $alunos,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
+    
+echo "DEBUG 5";
 
     // SALVAR NO ARQUIVO JSON
     file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+    
+echo "DEBUG 6";
 }
 
 // LEITURA DOS DADOS PARA EXIBIÇÃO
@@ -66,8 +74,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //Lê o arquivo JSON
 $conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
 
+echo "DEBUG 7";
+
 // Converte o JSON para ARRAY PHP
 $alunos = json_decode($conteudoJson, true);
+
+echo "DEBUG 8";
 
 ?>
 <!DOCTYPE html>
@@ -80,6 +92,7 @@ $alunos = json_decode($conteudoJson, true);
 <body>
     <h1>CADASTRO DE NOTAS</h1>
     <form method="POST">
+         <?php echo "DEBUG X"; ?>
         <label>Nome:</label>
         <input type="text" name="nome" required>
         <br><br>
@@ -105,6 +118,7 @@ $alunos = json_decode($conteudoJson, true);
     <h1>ALUNOS CADASTRADOS</h1>
 
     <?php foreach ($alunos as $aluno) { ?>
+        <h2> <?= $aluno["id"] ?> </h2>
         <h2> <?= $aluno["nome"] ?> </h2>
         <p> Idade: <?= $aluno["idade"] ?> </p>
 
@@ -114,21 +128,10 @@ $alunos = json_decode($conteudoJson, true);
         <p>Prova 2: <?= $aluno["notas"]["portugues"]["prova2"] ?></p>
         <p>Prova 3: <?= $aluno["notas"]["portugues"]["prova3"] ?></p>
 
-        <!-- MATEMÁTICA -->
-        <h2>MATEMÁTICA</h2>
-        <p>Prova 1: <?= $aluno["notas"]["matematica"]["prova1"] ?></p>
-        <p>Prova 2: <?= $aluno["notas"]["matematica"]["prova2"] ?></p>
-        <p>Prova 3: <?= $aluno["notas"]["matematica"]["prova3"] ?></p>
 
-        <!-- HISTÓRIA -->
-        <h2>HISTÓRIA</h2>
-        <p>Prova 1: <?= $aluno["notas"]["historia"]["prova1"] ?></p>
-        <p>Prova 2: <?= $aluno["notas"]["historia"]["prova2"] ?></p>
-        <p>Prova 3: <?= $aluno["notas"]["historia"]["prova3"] ?></p>
+    <?php echo "DEBUG X"; ?>
 
-
-
-
+    <a href="../index.php"></a>
     <?php } ?>
 
 </body>
