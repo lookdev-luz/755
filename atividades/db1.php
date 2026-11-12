@@ -120,7 +120,7 @@
                     <td><?= $produto["quantidade"] ?></td>
                     <td>
                         <!-- EDITAR -->
-                        <a href="index.php?editar=<?= $produto['id'] ?>">Editar</a>
+                        <a href="db1.php?editar=<?= $produto['id'] ?>">Editar</a>
                         <!-- EXCLUIR -->
                         <form method="POST" action="db1.php" style="display:inline;">
                             <input type="hidden" name="id" value="<?= $produto['id'] ?>">
