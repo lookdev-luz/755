@@ -122,7 +122,7 @@
                         <!-- EDITAR -->
                         <a href="index.php?editar=<?= $produto['id'] ?>">Editar</a>
                         <!-- EXCLUIR -->
-                        <form method="POST" action="index.php" style="display:inline;">
+                        <form method="POST" action="db1.php" style="display:inline;">
                             <input type="hidden" name="id" value="<?= $produto['id'] ?>">
                             <button type="submit" name="excluir" onclick="return confirm('Deseja excluir este produto?')">Excluir</button>
                         </form>
