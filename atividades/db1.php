@@ -11,19 +11,26 @@
     $pdo->exec($sql);
 
     // 2. CADASTRAR PRODUTO
-    if (isset($_POST["cadastrar"])) {
-        $nome = $_POST["nome"];
-        $preco = $_POST["preco"];
-        $quantidade = $_POST["quantidade"];
+if (isset($_POST["cadastrar"])) {
 
-        $sql = "INSERT INTO produtos (nome, preco, quantidade) VALUES ('$nome', $preco, $quantidade)";
+    $nome = $_POST["nome"];
+    $preco = $_POST["preco"];
+    $quantidade = $_POST["quantidade"];
 
+    $sql = "INSERT INTO produtos (nome, preco, quantidade)
+            VALUES ('$nome', $preco, $quantidade)";
+
+    echo "<pre>";
+    echo htmlspecialchars($sql);
+    echo "</pre>";
+
+    try {
         $pdo->exec($sql);
-        
-        //$stmt = $pdo->prepare($sql);
-
-        //$stmt->execute();
+        echo "Produto cadastrado com sucesso!";
+    } catch (PDOException $e) {
+        echo "Erro SQL: " . htmlspecialchars($e->getMessage());
     }
+}
     
     // 3. ATUALIZAR PRODUTO
     if (isset($_POST["atualizar"])) {
