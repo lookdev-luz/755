@@ -17,12 +17,10 @@
         $quantidade = $_POST["quantidade"];
 
         $sql = "INSERT INTO produtos (nome, preco, quantidade) VALUES ('$nome', $preco, $quantidade)";
-
-        $pdo->exec($sql);
         
-        //$stmt = $pdo->prepare($sql);
+        $stmt = $pdo->prepare($sql);
 
-        //$stmt->execute();
+        $stmt->execute();
     }
     
     // 3. ATUALIZAR PRODUTO
